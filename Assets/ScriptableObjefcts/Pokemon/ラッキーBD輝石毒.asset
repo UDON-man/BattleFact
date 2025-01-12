@@ -169,14 +169,10 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  PokemonName: "\u30E9\u30C3\u30AD\u30FCHB\u8F1D\u77F3\u6BD2"
+  PokemonName: "\u30E9\u30C3\u30AD\u30FCBD\u8F1D\u77F3\u6BD2"
   ItemName: "\u3057\u3093\u304B\u306E\u304D\u305B\u304D"
   AbilityName: "\u3057\u305C\u3093\u304B\u3044\u3075\u304F"
-  SkillNameList:
-  - "\u3061\u304D\u3085\u3046\u306A\u3052"
-  - "\u30BF\u30DE\u30B4\u3046\u307F"
-  - "\u3069\u304F\u3069\u304F"
-  - "\u30B9\u30C6\u30EB\u30B9\u30ED\u30C3\u30AF"
+  SkillNameList: []
   MezapaType: {fileID: 0}
   pokedex: {fileID: 11400000, guid: a371363aac186cb4e9de725f62eae1f0, type: 2}
   slowest: 0
