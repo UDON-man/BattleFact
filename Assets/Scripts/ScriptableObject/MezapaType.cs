@@ -8,7 +8,7 @@ using UnityEngine;
 
 public class MezapaType : SerializedScriptableObject
 {
-	[SerializeField] PokemonType _pokemonType;
+	[SerializeField] PokemonType _pokemonType = PokemonType.Normal;
 
 	[SerializeField] Dictionary<Parameter, bool> _individualIsOdd = CreateDictionary.CreateEnumBoolDictionary<Parameter>();
 

@@ -3,18 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using System.Linq;
-using System.IO;
 
 public class DataBase : MonoBehaviour
 {
-	public static DataBase instance = null;
+	private static DataBase _instance = null;
 
-	private void Awake()
+	void Awake()
 	{
-		instance = this;
+		if (_instance == null)
+		{
+			_instance = this;
+		}
 	}
 
-	public static Dictionary<PokemonType, string> PokemonTypeJPNameDictionary = new Dictionary<PokemonType, string>()
+	public static DataBase GetInstance()
+	{
+		return _instance;
+	}
+
+	public List<SkillEntity> skillEntities = new();
+	public List<(int skillId, string skillName)> skillNameList = new();
+
+	public static Dictionary<PokemonType, string> PokemonTypeJPNameDictionary = new()
 	{
 		{ PokemonType.Normal,"ノーマル" },
 		{ PokemonType.Fire,"炎" },

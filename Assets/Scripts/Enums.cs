@@ -41,3 +41,10 @@ public enum NatureRevision
 	Up,
 	Down
 }
+
+public enum SkillStyle
+{
+	Physics,
+	Special,
+	Change
+}

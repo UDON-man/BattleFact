@@ -6,23 +6,19 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Pokedex", menuName = "Create Pokedex")]
 public class Pokedex : SerializedScriptableObject
 {
-    public string DisplayName;
+    public int pokedexId = 0;
+    public int formId = 0;
+    public Dictionary<Parameter, int> baseParam = CreateDictionary.CreateEnumIntDictionary<Parameter>();
 
-    public Dictionary<Parameter, int> Base = CreateDictionary.CreateEnumIntDictionary<Parameter>();
+    public List<PokemonType> typeList = new();
+    public List<int> abilityIdList = new();
 
-    public List<PokemonType> TypeList;
-    public List<string> AbilityNameList;
+    public Sprite image = null;
 
-    public Sprite Image;
+    public PokemonGender pokemonGender = PokemonGender.Both;
+    public AudioClip cry = null;
 
-    public int PokedexNo;
+    public float weight = 0f;
 
-    public PokemonGender PokemonGender;
-    public AudioClip Cry;
-
-    public float Weight;
-
-    public bool WillEvolve;
-
-    public string PokemonName => string.IsNullOrEmpty(DisplayName) ? this.name : DisplayName;
+    public bool willEvolve = false;
 }

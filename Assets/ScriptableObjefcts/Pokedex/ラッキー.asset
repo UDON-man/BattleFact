@@ -21,7 +21,7 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
-    - Name: Base
+    - Name: baseParam
       Entry: 7
       Data: 0|System.Collections.Generic.Dictionary`2[[Parameter, Assembly-CSharp],[System.Int32,
         mscorlib]], mscorlib
@@ -119,14 +119,14 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
-  DisplayName: 
-  TypeList: 00000000
-  AbilityNameList:
-  - "\u3057\u305C\u3093\u304B\u3044\u3075\u304F"
+  displayName: "\u30E9\u30C3\u30AD\u30FC"
+  typeList: 00000000
+  abilityNameList:
+  - "\u3057\u305C\u3093\u304B\u3044\u3075\u304F\t"
   - "\u3066\u3093\u306E\u3081\u3050\u307F"
-  Image: {fileID: 21300000, guid: 0386d14e9d19975419351994b603a7c2, type: 3}
-  PokedexNo: 113
-  PokemonGender: 2
-  Cry: {fileID: 0}
-  Weight: 34.6
-  WillEvolve: 0
+  image: {fileID: 0}
+  pokedexNo: 0
+  pokemonGender: 0
+  cry: {fileID: 0}
+  weight: 0
+  willEvolve: 0
